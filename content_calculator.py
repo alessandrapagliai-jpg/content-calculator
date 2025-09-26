@@ -95,7 +95,7 @@ def format_md(res: dict) -> str:
     mt = res["maturity"]
     legend = (
         "- **Maintenance**: ≥ 70%\n"
-        "- **Scale**: ≥ 30% e < 70%\n"
+        "- **Scale**: ≥ 30% and < 70%\n"
         "- **Growth**: < 30%\n"
     )
     md = f"""
@@ -112,8 +112,8 @@ def format_md(res: dict) -> str:
 Content Pieces: **{res['recommended_contents']}**
 
 **Content Formats**
-- Articles: **{res['split']['text_contents']}** ({int(res['split']['text_pct']*100)}%)
-- Media Contents: **{res['split']['media_contents']}** ({int(res['split']['media_pct']*100)}%)
+- Articles: **{res['split']['text_contents']}**
+- Media Contents: **{res['split']['media_contents']}**
 """
     return md
 
