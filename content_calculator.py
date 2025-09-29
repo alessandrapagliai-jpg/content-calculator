@@ -121,7 +121,8 @@ Content Pieces: **{res['recommended_contents']}**
 # UI
 # --------------------------------
 st.title("Keyword Coverage Planner")
-
+st.text("This tool allows you to calculate the number and type of content to be produced for each territory in order to improve visibility on search engines and LLMs.
+Select the reference macro-territory, enter the target territory, and using the SOS Global Dashboard, provide the number of global keywords covered by the DMI for the territory and the total number of keywords mapped within the territory.")
 col1, col2 = st.columns([1, 1])
 
 with col1:
